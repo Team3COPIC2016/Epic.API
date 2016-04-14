@@ -29,5 +29,15 @@ namespace Epic.API.Controllers
         {
             _repository.Delete(id);
         }
+
+        // GET api/work?employeeId=123
+        [HttpGet]
+        [Route("api/Work/Employee/{employeeId}")]
+        public IEnumerable<ITimedWork> GetByUserId(string employeeId)
+        {
+            var work = _repository.GetAll().Where(x => x.AssignedToId == employeeId).ToList();
+
+            return work;
+        } 
     }
 }

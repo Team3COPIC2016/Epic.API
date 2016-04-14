@@ -24,10 +24,10 @@ namespace Epic.API
             container.RegisterSingleton<IMongoDatabase>(() => new MongoClient("mongodb://admin:APCo73yjfs@ds023510.mlab.com:23510/epic-cop2016").GetDatabase("epic-cop2016"));
             container.RegisterWebApiRequest<IEmployeeRepository, EmployeeRepository>();
             container.RegisterWebApiRequest<IWorkRepository<Domain.Model.Epic>, WorkRepository<Domain.Model.Epic>>();
-            container.RegisterWebApiRequest<WorkRepository<Feature>, WorkRepository<Feature>>();
-            container.RegisterWebApiRequest<WorkRepository<Story>, WorkRepository<Story>>();
-            container.RegisterWebApiRequest<WorkRepository<Task>, WorkRepository<Task>>();
-            container.RegisterWebApiRequest<WorkRepository<GenericWork>, WorkRepository<GenericWork>>();
+            container.RegisterWebApiRequest<IWorkRepository<Feature>, WorkRepository<Feature>>();
+            container.RegisterWebApiRequest<IWorkRepository<Story>, WorkRepository<Story>>();
+            container.RegisterWebApiRequest<IWorkRepository<Task>, WorkRepository<Task>>();
+            container.RegisterWebApiRequest<IWorkRepository<GenericWork>, WorkRepository<GenericWork>>();
 
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
 
