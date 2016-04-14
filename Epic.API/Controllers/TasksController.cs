@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
 using Epic.Domain.Model;
 using Epic.Domain.Repositories;
 
@@ -25,6 +27,16 @@ namespace Epic.API.Controllers
             var updatedTask = _repository.Update(task, user);
 
             return updatedTask;
+        }
+
+        // GET api/tasks/Employee?employeeId=123
+        [HttpGet]
+        [Route("api/Tasks/Employee/{employeeId}")]
+        public IEnumerable<ITimedWork> GetByUserId(string employeeId)
+        {
+            var work = _repository.GetAll().Where(x => x.AssignedToId == employeeId && x.Type == "Task").ToList();
+
+            return work;
         }
     }
 }
