@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epic.API", "Epic.API\Epic.API.csproj", "{218F199D-38B8-44F7-9982-1FF13800916C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epic.Domain", "Epic.Domain\Epic.Domain.csproj", "{9B940DB9-361D-4615-A270-BA6FA40461ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epic.Repositories.MongoDB", "Epic.Repositories.MongoDB\Epic.Repositories.MongoDB.csproj", "{6E847A18-82D5-4530-AD1B-B1D3DF8E63FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A41B0012-6A72-4727-9D45-63E2AC457DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epic.Tests.Integration", "Epic.Tests.Integration\Epic.Tests.Integration.csproj", "{7582D418-1DB0-4B2F-8F71-863A4B9BCD11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218F199D-38B8-44F7-9982-1FF13800916C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218F199D-38B8-44F7-9982-1FF13800916C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218F199D-38B8-44F7-9982-1FF13800916C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218F199D-38B8-44F7-9982-1FF13800916C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B940DB9-361D-4615-A270-BA6FA40461ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B940DB9-361D-4615-A270-BA6FA40461ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B940DB9-361D-4615-A270-BA6FA40461ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B940DB9-361D-4615-A270-BA6FA40461ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E847A18-82D5-4530-AD1B-B1D3DF8E63FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E847A18-82D5-4530-AD1B-B1D3DF8E63FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E847A18-82D5-4530-AD1B-B1D3DF8E63FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E847A18-82D5-4530-AD1B-B1D3DF8E63FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7582D418-1DB0-4B2F-8F71-863A4B9BCD11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7582D418-1DB0-4B2F-8F71-863A4B9BCD11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7582D418-1DB0-4B2F-8F71-863A4B9BCD11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7582D418-1DB0-4B2F-8F71-863A4B9BCD11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7582D418-1DB0-4B2F-8F71-863A4B9BCD11} = {A41B0012-6A72-4727-9D45-63E2AC457DD0}
+	EndGlobalSection
+EndGlobal
